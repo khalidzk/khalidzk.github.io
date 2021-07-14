@@ -1,0 +1,14 @@
+User-agent: *
+Allow: /
+Allow: /categories/
+Allow: /tags/
+Allow: /archives/
+Allow: /posts/
+Disallow: /js/
+Disallow: /css/
+Disallow: /fonts/
+Disallow: /vendors/
+Disallow: /fancybox/
+
+Sitemap: https://khalidlife.com/sitemap.xml
+Sitemap: https://khalidlife.com/baidusitemap.xml
