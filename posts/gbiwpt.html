@@ -1,0 +1,252 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>IDEA最全配置与插件安装 | Khalid博客</title><meta name="author" content="Khalid,732060461@qq.com"><meta name="copyright" content="Khalid"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="idea最全配置与插件安装"><link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/khalidzk/kieran-source@master/img/khalidfavicon.ico"><link rel="canonical" href="https://www.khalidlife.com/posts/gbiwpt"><link rel="preconnect" href="//cdn.jsdelivr.net"><link rel="preconnect" href="//hm.baidu.com"><link rel="preconnect" href="//busuanzi.ibruce.info"><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.min.css" media="print" onload="this.media='all'"><script>var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?e087d763f6827414e12f12bbd7b72698";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: {"appId":"AL6RMCBHYJ","apiKey":"d9cd126abd8a3b1452c2e7e181da3882","indexName":"kieran","hits":{"per_page":6},"languages":{"input_placeholder":"搜索文章","hits_empty":"找不到您查询的内容：${query}","hits_stats":"找到 ${hits} 条结果，用时 ${time} 毫秒"}},
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'IDEA最全配置与插件安装',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2022-11-29 15:05:56'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="Khalid博客" type="application/atom+xml">
+</head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://cdn.jsdelivr.net/gh/khalidzk/kieran-source@master/img/avatar_betacat_07.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">17</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">15</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">20</div></a></div><hr><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 归档页</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签页</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类页</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链页</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于我</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://cdn.jsdelivr.net/gh/jerryc127/butterfly_cdn@2.1.0/top_img/default.png')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">Khalid博客</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 归档页</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签页</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类页</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链页</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于我</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">IDEA最全配置与插件安装</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2021-02-02T05:49:00.000Z" title="发表于 2021-02-02 13:49:00">2021-02-02</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2022-11-29T07:05:56.064Z" title="更新于 2022-11-29 15:05:56">2022-11-29</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E5%B7%A5%E5%85%B7/">工具</a><i class="fas fa-angle-right post-meta-separator"></i><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E5%B7%A5%E5%85%B7/%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/">开发环境</a><i class="fas fa-angle-right post-meta-separator"></i><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E5%B7%A5%E5%85%B7/%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/idea/">idea</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">1.5k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>5分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id data-flag-title="IDEA最全配置与插件安装"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="下载安装"><a href="#下载安装" class="headerlink" title="下载安装"></a>下载安装</h1><h2 id="1-1、下载"><a href="#1-1、下载" class="headerlink" title="1.1、下载"></a>1.1、下载</h2><p><a target="_blank" rel="external nofollow noopener noreferrer" href="https://www.jetbrains.com/idea/download/">官网下载地址</a></p>
+<h2 id="1-2、安装"><a href="#1-2、安装" class="headerlink" title="1.2、安装"></a>1.2、安装</h2><p>在 IDEA 中选择：File —&gt; Settings —&gt; Plugins</p>
+<h1 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h1><h2 id="2-1、编码配置（windows）"><a href="#2-1、编码配置（windows）" class="headerlink" title="2.1、编码配置（windows）"></a>2.1、编码配置（windows）</h2><blockquote>
+<p>File -&gt; Settings -&gt; Editor -&gt; File Encoding</p>
+</blockquote>
+<ol>
+<li>设置<code>Global Encoding</code>: <code>UTF-8</code></li>
+<li>设置<code>Project Encoding</code>: <code>UTF-8</code></li>
+<li>设置<code>Default encoding for properties files</code>: <code>UTF-8</code>，勾选<code>Transparent native-to-ascii conversion</code></li>
+<li>设置<code>Create UTF-8 files</code>: <code>with NO BOM</code></li>
+</ol>
+<h2 id="2-2、代码风格统一设置"><a href="#2-2、代码风格统一设置" class="headerlink" title="2.2、代码风格统一设置"></a>2.2、代码风格统一设置</h2><blockquote>
+<p>File -&gt; Manager IDE Settings -&gt; Import Settings</p>
+</blockquote>
+<p>导入<code>idea_khalid_settings.zip</code></p>
+<h1 id="IDEA-插件安装"><a href="#IDEA-插件安装" class="headerlink" title="IDEA 插件安装"></a>IDEA 插件安装</h1><h2 id="3-1、安装方法"><a href="#3-1、安装方法" class="headerlink" title="3.1、安装方法"></a>3.1、安装方法</h2><p>在使用插件之前，你需要了解 IDEA 的插件安装方式，安装 IDEA 插件是非常方便的，你只要知道插件的名字就可以直接安装， IDEA 插件安装有两种方式：在线安装、离线安装。</p>
+<h3 id="3-1-1、在线安装"><a href="#3-1-1、在线安装" class="headerlink" title="3.1.1、在线安装"></a>3.1.1、在线安装</h3><blockquote>
+<p>在 IDEA 中选择：File -&gt; Settings -&gt; Plugins</p>
+</blockquote>
+<p>你可以直接在开发工具输入插件的名字搜索安装，例如安装 Lombok 插件：<br><img src="https://cdn.nlark.com/yuque/0/2021/gif/1082206/1612314087666-1f95e1ed-34ad-42f5-b419-506dd0c8beff.gif#crop=0&crop=0&crop=1&crop=1&height=452&id=amuq7&originHeight=452&originWidth=640&originalType=binary%E2%88%B6=1&rotation=0&showTitle=false&size=0&status=done&style=none&title=&width=640"></p>
+<h3 id="3-1-2、离线安装"><a href="#3-1-2、离线安装" class="headerlink" title="3.1.2、离线安装"></a>3.1.2、离线安装</h3><blockquote>
+<p>在 IDEA 中选择：File -&gt; Settings -&gt; Plugins-&gt; ⚙ -&gt; Install Plugin from Disk</p>
+</blockquote>
+<h2 id="3-2、插件大全"><a href="#3-2、插件大全" class="headerlink" title="3.2、插件大全"></a>3.2、插件大全</h2><h3 id="3-2-1、idea-上-类调用时序图：SequenceDiagram-for-IntelliJ-IDEA"><a href="#3-2-1、idea-上-类调用时序图：SequenceDiagram-for-IntelliJ-IDEA" class="headerlink" title="3.2.1、idea 上 类调用时序图：SequenceDiagram for IntelliJ IDEA"></a>3.2.1、idea 上 类调用时序图：<code>SequenceDiagram for IntelliJ IDEA</code></h3><blockquote>
+<p>推荐指数：☆☆☆ 推荐理由：在梳理别人的代码的时候， 能够很清晰的看到依赖调用时序</p>
+</blockquote>
+<p><img src="https://cdn.nlark.com/yuque/0/2021/png/1082206/1613553295052-c8695729-dce5-4afe-9c33-7b832d4086cd.png#crop=0&crop=0&crop=1&crop=1&height=753&id=oKXdu&margin=%5Bobject%20Object%5D&name=image.png&originHeight=753&originWidth=887&originalType=binary%E2%88%B6=1&rotation=0&showTitle=false&size=366272&status=done&style=none&title=&width=887" alt="image.png"></p>
+<h3 id="3-2-2、彩色括号：Rainbow-Brackets"><a href="#3-2-2、彩色括号：Rainbow-Brackets" class="headerlink" title="3.2.2、彩色括号：Rainbow Brackets"></a>3.2.2、彩色括号：<code>Rainbow Brackets</code></h3><blockquote>
+<p>推荐指数：☆☆☆☆☆ 推荐理由：方便查看代码</p>
+</blockquote>
+<p><img src="https://cdn.nlark.com/yuque/0/2021/png/1082206/1613553413948-8e52f597-cf19-4224-8bea-669cce636628.png#crop=0&crop=0&crop=1&crop=1&height=292&id=P6mki&margin=%5Bobject%20Object%5D&name=image.png&originHeight=292&originWidth=1080&originalType=binary%E2%88%B6=1&rotation=0&showTitle=false&size=150504&status=done&style=none&title=&width=1080" alt="image.png"></p>
+<h3 id="3-2-3、mybatis-插件集合：MyBatis-Log-Plugin，MyBatisCodeHelperPro，Free-Mybatis-plugin"><a href="#3-2-3、mybatis-插件集合：MyBatis-Log-Plugin，MyBatisCodeHelperPro，Free-Mybatis-plugin" class="headerlink" title="3.2.3、mybatis 插件集合：MyBatis Log Plugin，MyBatisCodeHelperPro，Free Mybatis plugin"></a>3.2.3、mybatis 插件集合：<code>MyBatis Log Plugin</code>，<code>MyBatisCodeHelperPro</code>，<code>Free Mybatis plugin</code></h3><blockquote>
+<p>推荐指数：☆☆☆☆☆ 推荐理由：在 sql 的 xml 里也能智能提示了！酷   三个插件都装上吧，相互补充</p>
+</blockquote>
+<h3 id="3-2-4、翻译插件：translation-plugin"><a href="#3-2-4、翻译插件：translation-plugin" class="headerlink" title="3.2.4、翻译插件：translation plugin"></a>3.2.4、翻译插件：<code>translation plugin</code></h3><blockquote>
+<p>推荐指数：☆☆☆☆<br>推荐理由：不能翻墙的同学，请自行百度如何更换为百度翻译。在 ide 中直接翻译，不需要跳转到网页了，效率神器！</p>
+</blockquote>
+<p><img src="https://cdn.nlark.com/yuque/0/2021/png/1082206/1613553719276-9d383358-6380-4645-8436-453ef0ac926b.png#crop=0&crop=0&crop=1&crop=1&height=500&id=i70bX&margin=%5Bobject%20Object%5D&name=image.png&originHeight=500&originWidth=400&originalType=binary%E2%88%B6=1&rotation=0&showTitle=false&size=20769&status=done&style=none&title=&width=400" alt="image.png"></p>
+<h3 id="3-2-5、快捷跳转-Action-方法：RestfulToolkitX"><a href="#3-2-5、快捷跳转-Action-方法：RestfulToolkitX" class="headerlink" title="3.2.5、快捷跳转 Action 方法：RestfulToolkitX"></a>3.2.5、快捷跳转 Action 方法：<code>RestfulToolkitX</code></h3><blockquote>
+<p>推荐指数：☆☆☆☆☆<br>推荐理由：spring 的开发中经常有根据浏览器 url 找对应 action 方法的需求，这个可以快捷的根据 url 跳转，不用 findAll 查询了</p>
+</blockquote>
+<h3 id="3-2-6、高亮提示：HighlightBracketPair"><a href="#3-2-6、高亮提示：HighlightBracketPair" class="headerlink" title="3.2.6、高亮提示：HighlightBracketPair"></a>3.2.6、<strong>高亮提示：<code>HighlightBracketPair</code></strong></h3><blockquote>
+<p>推荐指数：☆☆☆☆☆<br>推荐理由：括号开始结尾 高亮显示。    一眼就能看到！</p>
+</blockquote>
+<p><img src="https://cdn.nlark.com/yuque/0/2021/gif/1082206/1613555860559-c532e7c4-f1a5-4ce6-b511-01ddfe3add95.gif#crop=0&crop=0&crop=1&crop=1&height=353&id=pBa0r&margin=%5Bobject%20Object%5D&name=640.gif&originHeight=353&originWidth=640&originalType=binary%E2%88%B6=1&rotation=0&showTitle=false&size=592746&status=done&style=none&title=&width=640" alt="640.gif"></p>
+<h3 id="3-2-7、转换大小写：CamelCase【推荐】-或-UpperLowerCapitalize"><a href="#3-2-7、转换大小写：CamelCase【推荐】-或-UpperLowerCapitalize" class="headerlink" title="3.2.7、转换大小写：CamelCase【推荐】 或 UpperLowerCapitalize"></a>3.2.7、<strong>转换大小写：<code>CamelCase</code>【推荐】 或 <code>UpperLowerCapitalize</code></strong></h3><blockquote>
+<p>推荐指数：☆☆☆☆☆<br>推荐理由：快捷转换格式：大小写     驼峰，下划线 中划线   等等</p>
+</blockquote>
+<h3 id="3-2-8、代码生成器-codehelper-generator-【推荐尝试】-或者-GenerateAllSetter"><a href="#3-2-8、代码生成器-codehelper-generator-【推荐尝试】-或者-GenerateAllSetter" class="headerlink" title="3.2.8、代码生成器 codehelper.generator 【推荐尝试】  或者 GenerateAllSetter"></a>3.2.8、代码生成器 codehelper.generator <strong>【推荐尝试】</strong>  或者 GenerateAllSetter</h3><blockquote>
+<p>推荐指数：☆☆☆☆☆<br>推荐理由：每次对象搞 set 的时候挨个 set，有了它可以一键自动 set<br>功能介绍：生成器，可以更轻松，更高效地生成代码</p>
+</blockquote>
+<h4 id="3-2-8-1、GenAllSetter-功能"><a href="#3-2-8-1、GenAllSetter-功能" class="headerlink" title="3.2.8.1、GenAllSetter 功能"></a>3.2.8.1、GenAllSetter 功能</h4><ul>
+<li>单击 GenAllSetter btn（支持快捷方式）时，将自动生成所有 Setter 方法（以 set 开头的方法）。</li>
+<li>单击 GenAllSetter btn 两次时，将使用默认值自动生成所有 Setter 方法。</li>
+</ul>
+<h4 id="3-2-8-2、GenAllSetter-用法"><a href="#3-2-8-2、GenAllSetter-用法" class="headerlink" title="3.2.8.2、GenAllSetter 用法"></a>3.2.8.2、GenAllSetter 用法</h4><ul>
+<li>单击主菜单中的工具-&gt; Codehelper-&gt; GenAllSetter 按钮以生成代码</li>
+</ul>
+<h4 id="3-2-8-3、GenDaoCode-功能"><a href="#3-2-8-3、GenDaoCode-功能" class="headerlink" title="3.2.8.3、GenDaoCode 功能"></a>3.2.8.3、GenDaoCode 功能</h4><ul>
+<li>一键根据 pojo 生成 dao，service，sql 和 mybatis xml 文件。</li>
+<li>一键更新 pojo 文件时，优雅地更新 sql，mybatis xml 文件。</li>
+<li>提供 insert，insertList，select，update 和 delete 方法。</li>
+<li>单击即可生成多声波。</li>
+<li>自动识别 pojo 字段的注释，并添加为 sql 注释。</li>
+</ul>
+<p><img src="https://cdn.nlark.com/yuque/0/2021/gif/1082206/1613555916599-23fc069d-c8c4-4306-a0a7-b03f2b980b49.gif#crop=0&crop=0&crop=1&crop=1&height=240&id=xpPWJ&margin=%5Bobject%20Object%5D&name=640%20%281%29.gif&originHeight=240&originWidth=480&originalType=binary%E2%88%B6=1&rotation=0&showTitle=false&size=501087&status=done&style=none&title=&width=480" alt="640 (1).gif"><img src="https://cdn.nlark.com/yuque/0/2021/gif/1082206/1613555918693-729985dd-b58c-4aea-8c11-100a8f993874.gif#crop=0&crop=0&crop=1&crop=1&height=224&id=HxCK9&margin=%5Bobject%20Object%5D&name=640%20%282%29.gif&originHeight=224&originWidth=320&originalType=binary%E2%88%B6=1&rotation=0&showTitle=false&size=1818160&status=done&style=none&title=&width=320" alt="640 (2).gif"></p>
+<h3 id="3-2-9、控制台日志高亮：Grep-Console"><a href="#3-2-9、控制台日志高亮：Grep-Console" class="headerlink" title="3.2.9、控制台日志高亮：Grep Console"></a>3.2.9、控制台日志高亮：<code>Grep Console</code></h3><blockquote>
+<p>推荐指数：☆☆☆☆☆<br>推荐理由：没什么好说的， 基本是必备！</p>
+</blockquote>
+<p><img src="https://cdn.nlark.com/yuque/0/2021/png/1082206/1613554300622-c74ee77a-48dd-4bcc-99e6-ae8ee4309a1a.png#crop=0&crop=0&crop=1&crop=1&height=433&id=SIotf&margin=%5Bobject%20Object%5D&name=image.png&originHeight=433&originWidth=899&originalType=binary%E2%88%B6=1&rotation=0&showTitle=false&size=678194&status=done&style=none&title=&width=899" alt="image.png"><br><img src="https://cdn.nlark.com/yuque/0/2021/gif/1082206/1613555946637-35b16ead-66aa-4fc2-b85b-f10a9afa1049.gif#crop=0&crop=0&crop=1&crop=1&height=274&id=DhI2b&margin=%5Bobject%20Object%5D&name=640%20%283%29.gif&originHeight=274&originWidth=601&originalType=binary%E2%88%B6=1&rotation=0&showTitle=false&size=249660&status=done&style=none&title=&width=601" alt="640 (3).gif"></p>
+<h3 id="3-2-10、反编译插件：IntelliJad"><a href="#3-2-10、反编译插件：IntelliJad" class="headerlink" title="3.2.10、反编译插件：IntelliJad"></a><del>3.2.10、反编译插件：<code>IntelliJad</code></del></h3><blockquote>
+<p><del>推荐指数：</del> &gt; <del>推荐理由：没什么好说的， 基本是必备！</del></p>
+</blockquote>
+<h3 id="3-2-11、保存自动格式化代码：Save-Actions"><a href="#3-2-11、保存自动格式化代码：Save-Actions" class="headerlink" title="3.2.11、保存自动格式化代码：Save Actions"></a>3.2.11、保存自动格式化代码：<code>Save Actions</code></h3><blockquote>
+<p>推荐指数：☆☆☆☆☆<br>推荐理由：配合统一的代码风格配置，可以统一整个开发小组的代码风格。</p>
+</blockquote>
+<h3 id="3-2-12、阿里规约插件：Alibaba-Java-Coding-Guidelines"><a href="#3-2-12、阿里规约插件：Alibaba-Java-Coding-Guidelines" class="headerlink" title="3.2.12、阿里规约插件：Alibaba Java Coding Guidelines"></a>3.2.12、阿里规约插件：<code>Alibaba Java Coding Guidelines</code></h3><blockquote>
+<p>推荐指数：☆☆☆☆☆<br>推荐理由：没什么好说的， 基本是必备！</p>
+</blockquote>
+<h3 id="3-2-13、代码注解插件：Lombok"><a href="#3-2-13、代码注解插件：Lombok" class="headerlink" title="3.2.13、代码注解插件：Lombok"></a>3.2.13、代码注解插件：<code>Lombok</code></h3><blockquote>
+<p>推荐指数：☆☆☆☆☆<br>推荐理由：没什么好说的， 基本是必备！</p>
+</blockquote>
+<h3 id="3-2-14、Git-工具箱插件：GitToolBox"><a href="#3-2-14、Git-工具箱插件：GitToolBox" class="headerlink" title="3.2.14、Git 工具箱插件：GitToolBox"></a>3.2.14、Git 工具箱插件：<code>GitToolBox</code></h3><blockquote>
+<p>推荐指数：☆☆☆☆☆<br>推荐理由：git 工具箱，提供各种 git 操作。</p>
+</blockquote>
+<p>详细配置见：<a target="_blank" rel="external nofollow noopener noreferrer" href="https://github.com/zielu/GitToolBox/wiki/Manual">https://github.com/zielu/GitToolBox/wiki/Manual</a></p>
+<h3 id="3-2-15、代码智能提示：Codota-AI-Autocomplete-for-Java-and-JavaScript"><a href="#3-2-15、代码智能提示：Codota-AI-Autocomplete-for-Java-and-JavaScript" class="headerlink" title="3.2.15、代码智能提示：Codota AI Autocomplete for Java and JavaScript"></a>3.2.15、代码智能提示：<code>Codota AI Autocomplete for Java and JavaScript</code></h3><blockquote>
+<p>推荐指数：☆☆☆☆☆<br>推荐理由：Codota 这个插件用于智能代码补全，它基于数百万 Java 程序，能够根据程序上下文提示补全代码。相比于 IDEA 自带的智能提示来说，Codota 的提示更加全面一些。</p>
+</blockquote>
+<p>我们创建线程池现在变成下面这样：<br><img src="https://cdn.nlark.com/yuque/0/2021/gif/1082206/1613555776563-37d16189-7712-4f30-9d9f-5497786c32f1.gif#crop=0&crop=0&crop=1&crop=1&height=427&id=BATcF&margin=%5Bobject%20Object%5D&name=v2-372a334f0dc562cc53f825d034fff892_b.gif&originHeight=427&originWidth=720&originalType=binary%E2%88%B6=1&rotation=0&showTitle=false&size=306643&status=done&style=none&title=&width=720" alt="v2-372a334f0dc562cc53f825d034fff892_b.gif"></p>
+<p>上面只是为了演示这个插件的强大，实际上创建线程池不推荐使用这种方式， 推荐使用 ThreadPoolExecutor 构造函数创建线程池。我下面要介绍的一个阿里巴巴的插件-<strong>Alibaba Java Code Guidelines</strong> 就检测出来了这个问题，所以，<strong>Executors</strong>下面用波浪线标记了出来。</p>
+<p><strong>除了，在写代码的时候智能提示之外。你还可以直接选中代码然后搜索相关代码示例。</strong><br><img src="https://cdn.nlark.com/yuque/0/2021/png/1082206/1613555556936-4f859226-11aa-43d5-800d-8669ca2f6c40.png#crop=0&crop=0&crop=1&crop=1&height=821&id=pgEVY&margin=%5Bobject%20Object%5D&name=image.png&originHeight=821&originWidth=720&originalType=binary%E2%88%B6=1&rotation=0&showTitle=false&size=268291&status=done&style=none&title=&width=720" alt="image.png"><br>Codota 还有一个在线网站，在这个网站上你可以根据代码关键字搜索相关代码示例，非常不错！我在工作中经常会用到，说实话确实给我带来了很大便利。网站地址：<a target="_blank" rel="external nofollow noopener noreferrer" href="https://www.codota.com/code"><strong>https://www.codota.com/code</strong></a> ，比如我们搜索  <code>Files.readAllLines</code>相关的代码，搜索出来的结果如下图所示：<br><img src="https://cdn.nlark.com/yuque/0/2021/png/1082206/1613555610927-ce4dfa63-06a4-4764-9df6-f5ee39738a29.png#crop=0&crop=0&crop=1&crop=1&height=627&id=E5wI0&margin=%5Bobject%20Object%5D&name=image.png&originHeight=627&originWidth=1080&originalType=binary%E2%88%B6=1&rotation=0&showTitle=false&size=331177&status=done&style=none&title=&width=1080" alt="image.png"><br>Codota 插件的基础功能都是免费的。你的代码也不会被泄露，这点你不用担心。</p>
+<h3 id="3-2-16、Yapi-接口导入插件：EasyYapi"><a href="#3-2-16、Yapi-接口导入插件：EasyYapi" class="headerlink" title="3.2.16、Yapi 接口导入插件：EasyYapi"></a>3.2.16、Yapi 接口导入插件：<code>EasyYapi</code></h3><blockquote>
+<p>推荐指数：☆☆☆☆☆<br>推荐理由：接口导入利器！</p>
+</blockquote>
+<p><a href="https://www.khalidlife.com/posts/lxe2lp.html">使用方法</a></p>
+<h3 id="3-2-17、其余插件汇总"><a href="#3-2-17、其余插件汇总" class="headerlink" title="3.2.17、其余插件汇总"></a>3.2.17、其余插件汇总</h3><ol>
+<li>快捷键提示工具：Key promoter X</li>
+<li>领域对象转 JSON 工具：POJO to JSON</li>
+<li>字符串工具：String Manipulation</li>
+<li>Redis 可视化：Iedis   收费</li>
+<li>K8s 工具：Kubernetes</li>
+<li>ignore 插件：.ignore</li>
+<li>Zookeeper 可视化：Zookeeper</li>
+<li>字节码查看器：Bytecode Viewer、jclasslib</li>
+<li>字节码编辑工具：Edit Bytecode</li>
+<li>bug 预检查：FindBugs-IDEA</li>
+<li>微基准测试：JMH Plugin</li>
+<li>使用 Markdown 的方式绘制时序图：PlantUML</li>
+<li>新 doc 插件：AsciiDoc</li>
+<li>正则插件：any-rule</li>
+</ol>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="https://www.khalidlife.com">Khalid</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://www.khalidlife.com/posts/gbiwpt.html">https://www.khalidlife.com/posts/gbiwpt.html</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="external nofollow noopener noreferrer">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://www.khalidlife.com" target="_blank">Khalid博客</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/jetbrains/">jetbrains</a><a class="post-meta__tags" href="/tags/idea/">idea</a></div><div class="post_share"><div class="social-share" data-image="https://cdn.jsdelivr.net/gh/jerryc127/butterfly_cdn@2.1.0/top_img/default.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><div class="post-reward"><div class="reward-button"><i class="fas fa-qrcode"></i> 打赏</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="https://cdn.jsdelivr.net/gh/khalidzk/kieran-source@master/img/9ce2be41db3743b4b59d1da0bf3616ad.jpg" target="_blank" rel="external nofollow noopener noreferrer"><img class="post-qr-code-img" src="https://cdn.jsdelivr.net/gh/khalidzk/kieran-source@master/img/9ce2be41db3743b4b59d1da0bf3616ad.jpg" alt="微信"></a><div class="post-qr-code-desc">微信</div></li><li class="reward-item"><a href="https://cdn.jsdelivr.net/gh/khalidzk/kieran-source@master/img/9ce2be41db3743b4b59d1da0bf3616ad.jpg" target="_blank" rel="external nofollow noopener noreferrer"><img class="post-qr-code-img" src="https://cdn.jsdelivr.net/gh/khalidzk/kieran-source@master/img/9ce2be41db3743b4b59d1da0bf3616ad.jpg" alt="支付宝"></a><div class="post-qr-code-desc">支付宝</div></li></ul></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/posts/gfa31l.html"><img class="prev-cover" src="https://cdn.jsdelivr.net/gh/jerryc127/butterfly_cdn@2.1.0/top_img/default.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">Windows10安装与配置</div></div></a></div><div class="next-post pull-right"><a href="/posts/zyqwzs.html"><img class="next-cover" src="https://cdn.jsdelivr.net/gh/jerryc127/butterfly_cdn@2.1.0/top_img/default.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">Centos8安装与配置</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/posts/lxe2lp.html" title="IDEA插件系列-EasyYapi"><img class="cover" src="https://cdn.jsdelivr.net/gh/jerryc127/butterfly_cdn@2.1.0/top_img/default.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2021-02-26</div><div class="title">IDEA插件系列-EasyYapi</div></div></a></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://cdn.jsdelivr.net/gh/khalidzk/kieran-source@master/img/avatar_betacat_07.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"></div><div class="author-info__name">Khalid</div><div class="author-info__description">Whatever you go, go with all your heart</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">17</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">15</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">20</div></a></div><a id="card-info-btn" target="_blank" rel="external nofollow noopener noreferrer" href="https://github.com/khalidzk"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/khalidzk" target="_blank" title rel="external nofollow noopener noreferrer"><i class="fa fa-github"></i></a><a class="social-icon" href="mailto:khalidlife@163.com" target="_blank" title rel="external nofollow noopener noreferrer"><i class="fa fa-envelope"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%B8%8B%E8%BD%BD%E5%AE%89%E8%A3%85"><span class="toc-number">1.</span> <span class="toc-text">下载安装</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-1%E3%80%81%E4%B8%8B%E8%BD%BD"><span class="toc-number">1.1.</span> <span class="toc-text">1.1、下载</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-2%E3%80%81%E5%AE%89%E8%A3%85"><span class="toc-number">1.2.</span> <span class="toc-text">1.2、安装</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E9%85%8D%E7%BD%AE"><span class="toc-number">2.</span> <span class="toc-text">配置</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#2-1%E3%80%81%E7%BC%96%E7%A0%81%E9%85%8D%E7%BD%AE%EF%BC%88windows%EF%BC%89"><span class="toc-number">2.1.</span> <span class="toc-text">2.1、编码配置（windows）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-2%E3%80%81%E4%BB%A3%E7%A0%81%E9%A3%8E%E6%A0%BC%E7%BB%9F%E4%B8%80%E8%AE%BE%E7%BD%AE"><span class="toc-number">2.2.</span> <span class="toc-text">2.2、代码风格统一设置</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#IDEA-%E6%8F%92%E4%BB%B6%E5%AE%89%E8%A3%85"><span class="toc-number">3.</span> <span class="toc-text">IDEA 插件安装</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#3-1%E3%80%81%E5%AE%89%E8%A3%85%E6%96%B9%E6%B3%95"><span class="toc-number">3.1.</span> <span class="toc-text">3.1、安装方法</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#3-1-1%E3%80%81%E5%9C%A8%E7%BA%BF%E5%AE%89%E8%A3%85"><span class="toc-number">3.1.1.</span> <span class="toc-text">3.1.1、在线安装</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-1-2%E3%80%81%E7%A6%BB%E7%BA%BF%E5%AE%89%E8%A3%85"><span class="toc-number">3.1.2.</span> <span class="toc-text">3.1.2、离线安装</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-2%E3%80%81%E6%8F%92%E4%BB%B6%E5%A4%A7%E5%85%A8"><span class="toc-number">3.2.</span> <span class="toc-text">3.2、插件大全</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#3-2-1%E3%80%81idea-%E4%B8%8A-%E7%B1%BB%E8%B0%83%E7%94%A8%E6%97%B6%E5%BA%8F%E5%9B%BE%EF%BC%9ASequenceDiagram-for-IntelliJ-IDEA"><span class="toc-number">3.2.1.</span> <span class="toc-text">3.2.1、idea 上 类调用时序图：SequenceDiagram for IntelliJ IDEA</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-2-2%E3%80%81%E5%BD%A9%E8%89%B2%E6%8B%AC%E5%8F%B7%EF%BC%9ARainbow-Brackets"><span class="toc-number">3.2.2.</span> <span class="toc-text">3.2.2、彩色括号：Rainbow Brackets</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-2-3%E3%80%81mybatis-%E6%8F%92%E4%BB%B6%E9%9B%86%E5%90%88%EF%BC%9AMyBatis-Log-Plugin%EF%BC%8CMyBatisCodeHelperPro%EF%BC%8CFree-Mybatis-plugin"><span class="toc-number">3.2.3.</span> <span class="toc-text">3.2.3、mybatis 插件集合：MyBatis Log Plugin，MyBatisCodeHelperPro，Free Mybatis plugin</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-2-4%E3%80%81%E7%BF%BB%E8%AF%91%E6%8F%92%E4%BB%B6%EF%BC%9Atranslation-plugin"><span class="toc-number">3.2.4.</span> <span class="toc-text">3.2.4、翻译插件：translation plugin</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-2-5%E3%80%81%E5%BF%AB%E6%8D%B7%E8%B7%B3%E8%BD%AC-Action-%E6%96%B9%E6%B3%95%EF%BC%9ARestfulToolkitX"><span class="toc-number">3.2.5.</span> <span class="toc-text">3.2.5、快捷跳转 Action 方法：RestfulToolkitX</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-2-6%E3%80%81%E9%AB%98%E4%BA%AE%E6%8F%90%E7%A4%BA%EF%BC%9AHighlightBracketPair"><span class="toc-number">3.2.6.</span> <span class="toc-text">3.2.6、高亮提示：HighlightBracketPair</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-2-7%E3%80%81%E8%BD%AC%E6%8D%A2%E5%A4%A7%E5%B0%8F%E5%86%99%EF%BC%9ACamelCase%E3%80%90%E6%8E%A8%E8%8D%90%E3%80%91-%E6%88%96-UpperLowerCapitalize"><span class="toc-number">3.2.7.</span> <span class="toc-text">3.2.7、转换大小写：CamelCase【推荐】 或 UpperLowerCapitalize</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-2-8%E3%80%81%E4%BB%A3%E7%A0%81%E7%94%9F%E6%88%90%E5%99%A8-codehelper-generator-%E3%80%90%E6%8E%A8%E8%8D%90%E5%B0%9D%E8%AF%95%E3%80%91-%E6%88%96%E8%80%85-GenerateAllSetter"><span class="toc-number">3.2.8.</span> <span class="toc-text">3.2.8、代码生成器 codehelper.generator 【推荐尝试】  或者 GenerateAllSetter</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#3-2-8-1%E3%80%81GenAllSetter-%E5%8A%9F%E8%83%BD"><span class="toc-number">3.2.8.1.</span> <span class="toc-text">3.2.8.1、GenAllSetter 功能</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-2-8-2%E3%80%81GenAllSetter-%E7%94%A8%E6%B3%95"><span class="toc-number">3.2.8.2.</span> <span class="toc-text">3.2.8.2、GenAllSetter 用法</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-2-8-3%E3%80%81GenDaoCode-%E5%8A%9F%E8%83%BD"><span class="toc-number">3.2.8.3.</span> <span class="toc-text">3.2.8.3、GenDaoCode 功能</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-2-9%E3%80%81%E6%8E%A7%E5%88%B6%E5%8F%B0%E6%97%A5%E5%BF%97%E9%AB%98%E4%BA%AE%EF%BC%9AGrep-Console"><span class="toc-number">3.2.9.</span> <span class="toc-text">3.2.9、控制台日志高亮：Grep Console</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-2-10%E3%80%81%E5%8F%8D%E7%BC%96%E8%AF%91%E6%8F%92%E4%BB%B6%EF%BC%9AIntelliJad"><span class="toc-number">3.2.10.</span> <span class="toc-text">3.2.10、反编译插件：IntelliJad</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-2-11%E3%80%81%E4%BF%9D%E5%AD%98%E8%87%AA%E5%8A%A8%E6%A0%BC%E5%BC%8F%E5%8C%96%E4%BB%A3%E7%A0%81%EF%BC%9ASave-Actions"><span class="toc-number">3.2.11.</span> <span class="toc-text">3.2.11、保存自动格式化代码：Save Actions</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-2-12%E3%80%81%E9%98%BF%E9%87%8C%E8%A7%84%E7%BA%A6%E6%8F%92%E4%BB%B6%EF%BC%9AAlibaba-Java-Coding-Guidelines"><span class="toc-number">3.2.12.</span> <span class="toc-text">3.2.12、阿里规约插件：Alibaba Java Coding Guidelines</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-2-13%E3%80%81%E4%BB%A3%E7%A0%81%E6%B3%A8%E8%A7%A3%E6%8F%92%E4%BB%B6%EF%BC%9ALombok"><span class="toc-number">3.2.13.</span> <span class="toc-text">3.2.13、代码注解插件：Lombok</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-2-14%E3%80%81Git-%E5%B7%A5%E5%85%B7%E7%AE%B1%E6%8F%92%E4%BB%B6%EF%BC%9AGitToolBox"><span class="toc-number">3.2.14.</span> <span class="toc-text">3.2.14、Git 工具箱插件：GitToolBox</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-2-15%E3%80%81%E4%BB%A3%E7%A0%81%E6%99%BA%E8%83%BD%E6%8F%90%E7%A4%BA%EF%BC%9ACodota-AI-Autocomplete-for-Java-and-JavaScript"><span class="toc-number">3.2.15.</span> <span class="toc-text">3.2.15、代码智能提示：Codota AI Autocomplete for Java and JavaScript</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-2-16%E3%80%81Yapi-%E6%8E%A5%E5%8F%A3%E5%AF%BC%E5%85%A5%E6%8F%92%E4%BB%B6%EF%BC%9AEasyYapi"><span class="toc-number">3.2.16.</span> <span class="toc-text">3.2.16、Yapi 接口导入插件：EasyYapi</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-2-17%E3%80%81%E5%85%B6%E4%BD%99%E6%8F%92%E4%BB%B6%E6%B1%87%E6%80%BB"><span class="toc-number">3.2.17.</span> <span class="toc-text">3.2.17、其余插件汇总</span></a></li></ol></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/posts/zfidhe.html" title="NVM与Node环境安装"><img src="https://cdn.jsdelivr.net/gh/jerryc127/butterfly_cdn@2.1.0/top_img/default.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="NVM与Node环境安装"></a><div class="content"><a class="title" href="/posts/zfidhe.html" title="NVM与Node环境安装">NVM与Node环境安装</a><time datetime="2022-05-15T07:33:00.000Z" title="发表于 2022-05-15 15:33:00">2022-05-15</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/krc62u.html" title="Java并发编程"><img src="https://cdn.jsdelivr.net/gh/jerryc127/butterfly_cdn@2.1.0/top_img/default.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Java并发编程"></a><div class="content"><a class="title" href="/posts/krc62u.html" title="Java并发编程">Java并发编程</a><time datetime="2022-02-24T00:30:50.000Z" title="发表于 2022-02-24 08:30:50">2022-02-24</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/umrbri.html" title="Centos免密登录"><img src="https://cdn.jsdelivr.net/gh/jerryc127/butterfly_cdn@2.1.0/top_img/default.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Centos免密登录"></a><div class="content"><a class="title" href="/posts/umrbri.html" title="Centos免密登录">Centos免密登录</a><time datetime="2021-07-22T05:08:00.000Z" title="发表于 2021-07-22 13:08:00">2021-07-22</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/pgw7at.html" title="OpenVPN安装与配置"><img src="https://cdn.jsdelivr.net/gh/jerryc127/butterfly_cdn@2.1.0/top_img/default.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="OpenVPN安装与配置"></a><div class="content"><a class="title" href="/posts/pgw7at.html" title="OpenVPN安装与配置">OpenVPN安装与配置</a><time datetime="2021-07-11T07:44:01.000Z" title="发表于 2021-07-11 15:44:01">2021-07-11</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/lxe2lp.html" title="IDEA插件系列-EasyYapi"><img src="https://cdn.jsdelivr.net/gh/jerryc127/butterfly_cdn@2.1.0/top_img/default.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="IDEA插件系列-EasyYapi"></a><div class="content"><a class="title" href="/posts/lxe2lp.html" title="IDEA插件系列-EasyYapi">IDEA插件系列-EasyYapi</a><time datetime="2021-02-26T04:49:00.000Z" title="发表于 2021-02-26 12:49:00">2021-02-26</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2022 By Khalid</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="external nofollow noopener noreferrer" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="external nofollow noopener noreferrer" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text"><a target="_blank" rel="external nofollow noopener noreferrer" href="http://www.beian.miit.gov.cn/"><img class="icp-icon" src="https://cdn.jsdelivr.net/gh/khalidzk/kieran-source@master/img/icp.png"><span>浙ICP备17028699号-3</span></a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="algolia-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="search-wrap"><div id="algolia-search-input"></div><hr><div id="algolia-search-results"><div id="algolia-hits"></div><div id="algolia-pagination"></div><div id="algolia-info"><div class="algolia-stats"></div><div class="algolia-poweredBy"></div></div></div></div></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/algoliasearch/dist/algoliasearch-lite.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instantsearch.js/dist/instantsearch.production.min.js"></script><script src="/js/search/algolia.js"></script><div class="js-pjax"></div><div class="aplayer no-destroy" data-id="7468913728" data-server="tencent" data-type="playlist" data-fixed="true" data-mini="true" data-listfolded="false" data-order="random" data-preload="none" data-autoplay="true" muted></div><script src="https://cdn.jsdelivr.net/gh/khalidzk/kieran-source@master/js/butterfly.min.js"></script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/metingjs/dist/Meting.min.js"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
